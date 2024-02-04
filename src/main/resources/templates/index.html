@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Registration Portal!</h1>
+    </header>
+
+    <form action="/register" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="course">Course</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select a course</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="BSC">BSC</option>
+        </select>
+
+        <label for="rollno">Roll No.</label>
+        <input type="number" id="rollno" name="rollno" required>
+        
+        
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+
+            <input type="button" value="Cancel" onclick="clearForm()">
+            <input type="submit" value="Submit">
+    </div>
+    </form>
+
+
+
+    <footer>
+        Made with ❤️ by Saurabh Mishra
+    </footer>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>
